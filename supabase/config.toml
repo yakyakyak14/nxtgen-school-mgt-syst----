@@ -1,0 +1,46 @@
+project_id = "obvrxshdsutktptrmtmv"
+
+[functions.ai-assistant]
+verify_jwt = false
+
+[functions.paystack-payment]
+verify_jwt = false
+
+[functions.paystack-webhook]
+verify_jwt = false
+
+[functions.verify-payment]
+verify_jwt = false
+
+[functions.google-places]
+verify_jwt = false
+
+[functions.send-receipt-email]
+verify_jwt = true
+
+[functions.send-fee-reminder]
+verify_jwt = true
+
+[functions.scheduled-fee-reminders]
+verify_jwt = false
+
+[functions.send-promotion-notification]
+verify_jwt = true
+
+[functions.send-weekly-report-email]
+verify_jwt = true
+
+[functions.send-invitation]
+verify_jwt = true
+
+[functions.resend-invitation]
+verify_jwt = true
+
+[functions.notify-school-status]
+verify_jwt = true
+
+[functions.subscription-payment]
+verify_jwt = false
+
+[functions.send-director-onboarding]
+verify_jwt = false
