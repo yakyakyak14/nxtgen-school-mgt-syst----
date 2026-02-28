@@ -60,7 +60,7 @@ const handler = async (req: Request): Promise<Response> => {
       throw new Error(invError.message);
     }
 
-    const appUrl = Deno.env.get("APP_URL") || "https://lovable.dev";
+    const appUrl = Deno.env.get("APP_URL") || "";
     const inviteLink = `${appUrl}/accept-invite?token=${invitation.token}`;
 
     const roleName = role.split('_').map((w: string) => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');

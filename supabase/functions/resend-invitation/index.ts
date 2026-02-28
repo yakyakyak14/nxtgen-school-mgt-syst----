@@ -43,7 +43,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     const { email, role, token: inviteToken, schoolName, inviterName }: ResendInvitationRequest = await req.json();
 
-    const appUrl = Deno.env.get("APP_URL") || "https://lovable.dev";
+    const appUrl = Deno.env.get("APP_URL") || "";
     const inviteLink = `${appUrl}/accept-invite?token=${inviteToken}`;
 
     const roleName = role.split('_').map((w: string) => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');

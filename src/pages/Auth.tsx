@@ -38,7 +38,7 @@ const portalConfig = {
     title: 'Staff Portal',
     description: 'For teachers, administrators, and school staff',
     icon: Briefcase,
-    color: 'bg-blue-500',
+    color: 'bg-primary',
     roles: ['Director', 'Principal', 'Headmaster', 'Teacher', 'Admin Staff', 'Non-Teaching Staff']
   },
   parents: {

@@ -40,7 +40,7 @@ export const useSchoolContext = () => {
           .eq('is_active', true);
 
         // Check if it's a custom domain or subdomain
-        if (hostname !== 'localhost' && !hostname.includes('lovable.app')) {
+        if (hostname !== 'localhost') {
           // Try to match by full domain first
           const { data: domainSchool } = await supabase
             .from('schools')

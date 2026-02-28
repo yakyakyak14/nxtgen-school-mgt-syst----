@@ -73,7 +73,7 @@ const handler = async (req: Request): Promise<Response> => {
       throw new Error(invError.message);
     }
 
-    const appUrl = Deno.env.get("APP_URL") || "https://lovable.dev";
+    const appUrl = Deno.env.get("APP_URL") || "";
     const inviteLink = `${appUrl}/accept-invite?token=${invitation.token}`;
 
     // Convert the plain text message to HTML paragraphs
